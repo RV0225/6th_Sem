@@ -19,13 +19,13 @@ public class Learn_Basics {
         // sum += Integer.parseInt(s);
         // }
         // System.out.println(sum);
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String s = br.readLine();
-        PriorityQueue<Character> pq = new PriorityQueue<>();
-        for (char c : s.toCharArray()) {
-            pq.add(c);
-        }
-        System.out.println(pq.poll() + "," + pq.poll());
+        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        // String s = br.readLine();
+        // PriorityQueue<Character> pq = new PriorityQueue<>();
+        // for (char c : s.toCharArray()) {
+        // pq.add(c);
+        // }
+        // System.out.println(pq.poll() + "," + pq.poll());
         // int a = 56;
         // int b = 7;
         // if (a % 10 == b % 10) {
@@ -33,5 +33,13 @@ public class Learn_Basics {
         // } else {
         // System.out.println("Different");
         // }
+
+        // BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        String gender = args[0];
+        int age = Integer.valueOf(args[1]);
+        if (gender.equals("Female") && age > 1 && age < 57) {
+            System.out.println("8.2%");
+        }
+
     }
 }
